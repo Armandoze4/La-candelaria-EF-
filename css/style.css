@@ -1,0 +1,286 @@
+/* Fuente de Google */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* ---------- Estilos generales ---------- */
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #f1fbff;
+	margin: 0;
+}
+
+.section-padding {
+	padding: 50px 0;
+}
+
+section h2 {
+	margin-top: 20px;
+}
+
+/* ---------- Carrusel ---------- */
+.carousel-item {
+	max-width: 100%;
+	height: 100vh;
+}
+
+.carousel-item img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.carousel-caption {
+	bottom: 15%;
+	z-index: 2;
+}
+
+.carousel-caption h5 {
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+
+.carousel-caption p {
+	width: 80%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+
+/* Capa oscura sobre las imágenes del carrusel */
+.carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+}
+
+/* ---------- Barra de navegación ---------- */
+.navbar-brand {
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.navbar-nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.navbar-toggler:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+/* ---------- Sobre nosotros ---------- */
+.about {
+	background-color: #f0f0f0;
+	border-radius: 10px;
+	padding: 70px;
+}
+
+.about-title {
+	color: #ff6600;
+	text-shadow: 2px 2px 2px #333;
+}
+
+.about-description {
+	font-style: italic;
+	color: #666;
+	text-align: justify;
+}
+
+/* ---------- Acordeón Misión / Visión ---------- */
+.accordion-section {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+	margin-top: -20px;
+}
+
+.accordion-title {
+	cursor: pointer;
+	padding: 10px;
+	background-color: #f19805;
+	color: #770201;
+	border: none;
+	text-align: left;
+	outline: none;
+	width: 100%;
+	margin-top: 30px;
+	border-radius: 8px;
+}
+
+.accordion-text {
+	background-color: #f19805;
+	color: #770201;
+	padding: 20px;
+	border-radius: 8px;
+	#mision, #vision {
+	scroll-margin-top: 80px;
+}
+}
+
+/* ---------- Tarjetas (servicios y danzas) ---------- */
+.card {
+	position: relative;
+	overflow: hidden;
+	min-height: 450px;
+}
+
+.card-body {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card-body h3,
+.lead {
+	width: 100%;
+}
+
+.dances .card,
+.services .card-body i {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.services .card-body i {
+	font-size: 3vw;
+}
+
+/* Imágenes de las danzas: todas del mismo tamaño */
+.dance-img {
+	width: 100%;
+	height: 220px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+/* Tarjetas de servicios: imagen de fondo al pasar el mouse (la pone main.js) */
+.service-card {
+	background-size: cover;
+	background-position: center;
+	transition: background .5s ease-in;
+}
+
+.service-card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+	transition: opacity 0.5s ease-in;
+	opacity: 0;
+}
+
+.service-card:hover::before {
+	opacity: 1;
+}
+
+.service-card h3,
+.service-card .lead {
+	position: relative;
+	z-index: 2;
+	color: #fff;
+}
+
+.service-card .btn {
+	position: relative;
+	z-index: 2;
+}
+
+/* ---------- Ubicación ---------- */
+.map-container {
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- Página de la carta (menu.html) ---------- */
+.menu-page {
+	padding-top: 100px;
+	padding-bottom: 40px;
+	min-height: calc(100vh - 56px);
+}
+
+.product img {
+	max-width: 200px;
+	width: 100%;
+	border-radius: 8px;
+	transition: transform 0.5s ease-in-out;
+}
+
+.product img:hover {
+	transform: scale(1.2);
+}
+
+.product-title {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.product-price {
+	margin-top: 5px;
+	color: #007bff;
+}
+
+/* ---------- Responsive ---------- */
+@media only screen and (max-width: 1024px) {
+	.carousel-item {
+		height: 50vh;
+	}
+
+	.carousel-caption {
+		bottom: 10%;
+	}
+
+	.carousel-caption h5 {
+		font-size: 22px;
+	}
+
+	.carousel-caption p {
+		width: 90%;
+		font-size: 16px;
+	}
+
+	.card {
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.carousel-caption {
+		bottom: 5%;
+	}
+
+	.carousel-caption h5 {
+		font-size: 18px;
+	}
+
+	.carousel-caption p {
+		width: 95%;
+		font-size: 14px;
+	}
+
+	.about {
+		padding: 40px 10px;
+	}
+
+	.about-text {
+		padding-top: 30px;
+	}
+
+	.services .card-body i {
+		font-size: 15vw;
+	}
+}

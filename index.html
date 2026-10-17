@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La Candelaria,
+    centro cultural en Barranco:
+    tardes y noches de folklore, carta peruana y eventos.">
+    <title>La Candelaria | Centro Cultural</title>
+
+    <!-- CSS externos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="text-danger">La</span>Candelaria</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                aria-expanded="false"
+                aria-label="Mostrar menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#about" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#about">Quiénes somos</a></li>
+                            <li><a class="dropdown-item" href="#mision">Misión</a></li>
+                            <li><a class="dropdown-item" href="#vision">Visión</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#dances">Danzas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Carta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#location">Ubicación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel -->
+    <div id="inicio" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#inicio" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Diapositiva 1"></button>
+            <button type="button" data-bs-target="#inicio" data-bs-slide-to="1"
+                aria-label="Diapositiva 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/marinera-1.webp" class="d-block w-100" alt="Pareja bailando marinera en La Candelaria">
+                <div class="carousel-caption">
+                    <h5>La Candelaria</h5>
+                    <p>Centro Cultural</p>
+                    <p><a href="https://api.whatsapp.com/send?phone=51994181906&text=Hola%20La%20Candelaria,%20quisiera%20mas%20informacion%20sobre%20las%20tardes%20y%20noches%20de%20folklore"
+                            class="btn btn-outline-danger mt-3" target="_blank" rel="noopener">Más información</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/aperitivos.jpg" class="d-block w-100" alt="Aperitivos de la carta criolla">
+                <div class="carousel-caption">
+                    <h5>Carta de aperitivos</h5>
+                    <p>Platos criollos para todos los gustos</p>
+                    <p><a href="menu.html" class="btn btn-outline-info mt-3">Ver carta</a></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#inicio" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#inicio" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!-- Sobre nosotros -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12 d-flex align-items-center">
+                    <div class="about-img text-center">
+                        <div class="col-md-6" id="mision"></div>
+                        <div class="col-md-6" id="vision"></div>
+                        <img src="img/lacandelariacentrocultural.png" alt="Logo del
+                         Centro Cultural La Candelaria"
+                            class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text">
+                        <h2 class="about-title">Sobre Nosotros</h2>
+                        <p class="about-description">La Candelaria abrió sus puertas al público un 15 de diciembre del
+                            año 2000, imponiendo desde el primer día un aire de folclor peruano en el tradicional
+                            distrito de Barranco, que hasta ese entonces se encontraba dominado por la cumbia, el reggae
+                            y el rock. No cabe duda que esta peña ha jugado un rol importante en la agenda cultural del
+                            distrito, pues hoy en día el género folclórico es particularmente característico de las
+                            noches barranquinas llenas de cultura, sabor y color.
+                            <br><br>
+                            Desde entonces, de jueves a domingo, ofrece un espectáculo de primera, el cual recopila las
+                            danzas más representativas de las distintas regiones del Perú, acompañadas de una orquesta en
+                            vivo, brindando así un espacio cultural, divertido e inolvidable en donde surge el aprendizaje
+                            y la valoración por la cultura peruana. Su Carta Cocina y Carta Bar presentan platos, piqueos
+                            y cocteles para compartir, que acompañados de un excelente servicio, complementan y
+                            perfeccionan la experiencia al público local y extranjero.
+                            <br><br>
+                            Actualmente, ofrece una alternativa ideal para la realización de eventos, presentaciones,
+                            recepciones y diversas actividades sociales o empresariales.
+                        </p>
+                        <a href="#services" class="btn btn-danger">Descubre más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Misión y visión (acordeón) -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <button class="accordion-title" type="button">
+                        <h3>Misión</h3>
+                        <hr>
+                    </button>
+                    <div class="accordion-section">
+                        <div class="accordion-text">
+                            <p>Ofrecemos un espectáculo que brinda al público peruano y extranjero, un espacio
+                                entretenido y divertido en donde surge el aprendizaje y la valoración por la cultura
+                                peruana a través de la representación de las danzas de las distintas regiones del Perú.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <button class="accordion-title" type="button">
+                        <h3>Visión</h3>
+                        <hr>
+                    </button>
+                    <div class="accordion-section">
+                        <div class="accordion-text">
+                            <p>Ser líderes en el Perú y el mundo en ofrecer experiencias relacionadas con la cultura y
+                                tradición peruana, principalmente las danzas, promoviendo su auténtica revaloración a
+                                través del entretenimiento sano y del fomento de la diversidad cultural.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Nuestros Servicios</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- data-image: ruta de la imagen que se muestra al pasar el mouse (la usa main.js) -->
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2 service-card"
+                        data-image="img/diasfolklore.jpg">
+                        <div class="card-body">
+                            <i class="bi bi-fire"></i>
+                            <h3 class="card-title">Tardes y Noches de Folklore</h3>
+                            <br>
+                            <p class="lead">Jueves, Viernes, Sábado y Domingo</p>
+                            <br>
+                            <a class="btn bg-warning text-dark" target="_blank" rel="noopener"
+                                href="https://api.whatsapp.com/send?phone=51994181906&text=Hola%20La%20Candelaria,%20quisiera%20informacion%20sobre%20las%20tardes%20y%20noches%20de%20folklore">Información</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2 service-card"
+                        data-image="img/corporativo.jpg">
+                        <div class="card-body">
+                            <i class="bi bi-calendar-event-fill"></i>
+                            <h3 class="card-title">Eventos Corporativos</h3>
+                            <br>
+                            <p class="lead">Desayunos, Buffets, Celebraciones, Clausuras y más</p>
+                            <br>
+                            <a class="btn bg-warning text-dark" target="_blank" rel="noopener"
+                                href="https://api.whatsapp.com/send?phone=51994181906&text=Hola%20La%20Candelaria,%20quisiera%20informacion%20sobre%20eventos%20corporativos">Información</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2 service-card"
+                        data-image="img/presentacion.jpg">
+                        <div class="card-body">
+                            <i class="bi bi-music-note-beamed"></i>
+                            <h3 class="card-title">Presentación de Danzas</h3>
+                            <br>
+                            <p class="lead">Lleva nuestras danzas a tu local personal</p>
+                            <br>
+                            <a class="btn bg-warning text-dark" target="_blank" rel="noopener"
+                                href="https://api.whatsapp.com/send?phone=51994181906&text=Hola%20La%20Candelaria,%20quisiera%20informacion%20sobre%20la%20presentacion%20de%20danzas%20en%20mi%20local">Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Danzas -->
+    <section id="dances" class="dances section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Danzas Peruanas</h2>
+                        <p>Descubre nuestras danzas típicas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="img/danza-festejo-ica-costa-la-candelaria-barranco-peru-300x200.jpg"
+                                    class="img-fluid dance-img" alt="Bailarines de festejo" loading="lazy">
+                            </div>
+                            <h3 class="card-title">Festejo</h3>
+                            <p class="lead">Costa Peruana, Ica</p>
+                            <button type="button" class="btn bg-warning text-dark" data-bs-toggle="modal"
+                                data-bs-target="#danzaModal" data-titulo="Festejo"
+                                data-texto="El festejo es una danza afroperuana de la costa. Es alegre y rápida, con mucho movimiento de caderas, y se baila al ritmo del cajón y otros instrumentos de percusión.">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="img/danza-marinera-nortena-la-libertad-lambayeque-piura-costa-la-candelaria-barranco-peru-768x512.jpg"
+                                    class="img-fluid dance-img" alt="Pareja bailando marinera norteña" loading="lazy">
+                            </div>
+                            <h3 class="card-title">Marinera Norteña</h3>
+                            <p class="lead">Costa Peruana, La Libertad</p>
+                            <button type="button" class="btn bg-warning text-dark" data-bs-toggle="modal"
+                                data-bs-target="#danzaModal" data-titulo="Marinera Norteña"
+                                data-texto="La marinera norteña es una danza de pareja que representa el cortejo. Se baila con pañuelo en mano, con pasos elegantes y mucho ritmo, y es considerada una de las danzas más representativas del Perú.">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="img/caporales-danza-puno-la-candelaria-300x200.jpg"
+                                    class="img-fluid dance-img" alt="Bailarines de caporales 
+                                    con trajes coloridos"
+                                    loading="lazy">
+                            </div>
+                            <h3 class="card-title">Caporales</h3>
+                            <p class="lead">Puno, Sierra Peruana</p>
+                            <button type="button" class="btn bg-warning text-dark" data-bs-toggle="modal"
+                                data-bs-target="#danzaModal" data-titulo="Caporales"
+                                data-texto="Los caporales son una danza de la sierra muy vistosa, con trajes brillantes, botas y saltos fuertes. Se baila en grupo y es muy popular en las fiestas de Puno.">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ventana emergente de las danzas (la llena main.js) -->
+    <div class="modal fade" id="danzaModal" tabindex="-1" aria-labelledby="danzaModalTitulo" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="danzaModalTitulo"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body" id="danzaModalTexto"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ubicación y horarios -->
+    <section id="location" class="location section-padding">
+        <div class="container">
+            <div class="section-header text-center pb-4">
+                <h2>Ubicación y Horarios</h2>
+                <p>Av. Bolognesi 292, Barranco, Lima</p>
+                <p>Abierto de jueves a domingo. Reservas por WhatsApp: 994 181 906</p>
+            </div>
+            <div class="map-container">
+                <iframe title="Mapa de La Candelaria en Barranco"
+                    src="https://www.google.com/maps?q=Av.
+                    +Bolognesi+292,+Barranco,+Lima&output=embed"
+                    width="100%" height="350" style="border:0;" allowfullscreen loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="bg-light py-3 py-md-5" id="contact">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                    <h2 class="mb-4 display-5 text-center">Contáctanos</h2>
+                    <div class="d-flex justify-content-center">
+                        <a target="_blank" rel="noopener" href="https://www.facebook.com/lacandelariaperu"
+                            class="text-decoration-none text-secondary mx-3" aria-label="Facebook"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a target="_blank" rel="noopener" href="https://www.instagram.com/lacandelariaperu/"
+                            class="text-decoration-none text-secondary mx-3" aria-label="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" rel="noopener" href="https://www.youtube.com/lacandelariaperu"
+                            class="text-decoration-none text-secondary mx-3" aria-label="YouTube"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a target="_blank" rel="noopener" href="https://www.tiktok.com/@lacandelariaperu"
+                            class="text-decoration-none text-secondary mx-3" aria-label="TikTok"><i
+                                class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                    <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-lg-center">
+                <div class="col-12 col-lg-9">
+                    <div class="bg-white border rounded shadow-sm overflow-hidden">
+
+                        <!-- Al enviar, main.js abre WhatsApp con el mensaje ya escrito -->
+                        <form id="contactForm">
+                            <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                                <div class="col-12">
+                                    <label for="fullname" class="form-label">Nombre completo <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="fullname" name="fullname" required>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="email" class="form-label">Correo <span
+                                            class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="phone" class="form-label">Teléfono</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                                        <input type="tel" class="form-control" id="phone" name="phone">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Mensaje <span
+                                            class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="message" name="message" rows="3"
+                                        required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-grid">
+                                        <button class="btn btn-primary btn-lg" type="submit">Enviar por WhatsApp</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark p-2 text-center">
+        <div class="container">
+            <p class="text-white mb-0">
+                2026 © La Candelaria Perú</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
